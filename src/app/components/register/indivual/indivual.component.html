@@ -1,0 +1,147 @@
+  <div class="work">
+    <div class="area">
+      <div class="nav">
+        <img src="../../../../assets/img/logo.png" alt="logo">
+        
+      </div>
+      <div class="details" >
+        <div class="account">
+          Account Details
+          <p>1</p>
+        </div>
+        <div class="del">
+          Delivery Details
+          <p>2</p>
+        </div>
+      </div>
+      <div class="form">
+        <form #userForm="ngForm" (ngSubmit)="createAccount(userForm)">
+          <div *ngIf="!page">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" name="username" [(ngModel)]="user.username" #userUsername="ngModel" class="form-controll"
+              [ngClass]="{'is-invalid': userUsername.errors && userUsername.touched}" required minlength="3">
+              <div class="invalid-feedback" [hidden]="!userUsername.errors?.required">
+                <p>username is required</p>
+              </div>
+              <div class="invalid-feedback" [hidden]="!userUsername.errors?.minlength">
+                <p>username must be more than 3 char</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="text" name="email" [(ngModel)]="user.email" class="form-controll" 
+              #userEmail="ngModel" [ngClass]="{'is-invalid': userEmail.errors && userEmail.touched}" required
+              pattern="">
+              <div class="invalid-feedback" [hidden]="!userEmail.errors?.required">
+                <p>Email is required</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" name="phone" [(ngModel)]="user.phone"  class="form-controll"
+              #userPhone="ngModel" [ngClass]="{'is-invalid': userPhone.errors && userPhone.touched }" minlength="11" maxlength="11" required>
+              <div class="invalid-feedback" [hidden]="!userPhone.errors?.required">
+                <p>Phone Number is required</p>
+              </div>
+            </div>
+            <div class="password">
+              <div class="form-group pass1">
+                <input type="password" name="password"  [(ngModel)]="user.password" class="form-controll" placeholder="Password"
+                #userPassword="ngModel" [ngClass]="{'is-invalid': userPassword.errors && userPassword.touched}" minlength="8" required>
+                <div class="invalid-feedback" [hidden]="!userPassword.errors?.required">
+                  <p>Password is required</p>
+                </div>
+                <div class="invalid-feedback" [hidden]="!userPassword.errors?.minlength">
+                  <p>Password must be at least 8 characters</p>
+                </div>
+              </div>
+              <div class="form-group pass">
+                <input type="password" name="conPass"   [(ngModel)]="conPass" class="form-controll" placeholder="Password Confirmation" #userConPass="ngModel" 
+                [ngClass]="{'is-invalid': userConPass.errors && userConPass.touched}" minlength="8" required >
+                <div class="invalid-feedback" [hidden]="!userConPass.errors?.required">
+                  <p>Conpass is required</p>
+                </div>
+                <div class="invalid-feedback" [hidden]="!userConPass.errors?.minlength">
+                  <p>Conpass must be at least 8 characters</p>
+                </div>
+                <div class="eq" *ngIf="conPass &&conPass !== user.password">
+                  <p>Password is not a same .</p>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <button (click)="next()" [disabled]="conPass !== user.password">next</button>
+            </div>
+          </div>
+          <div *ngIf="page">
+            <div class="form-group  select">
+              <div class="country">
+                Country
+                <select name="country" [(ngModel)]="user.address.country" placeholder="Choose your Country">
+                  <option >Cario</option>
+                  <option >Alex</option>
+                  <option>Assiut</option>
+                  <option >Luxor</option>
+
+                </select>
+              </div>
+              <div class="city">
+                City
+                <select name="city" [(ngModel)]="user.address.city">
+                  <option>Tanta</option>
+                  <option>Santa</option>
+                  <option>KfrElsyat</option>
+                  <option>Bassyon</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Details Of Address</label>
+              <input type="text" name="addressDet" [(ngModel)]="user.address.addressDet" class="form-controll">
+            </div>
+            
+            <div class="form-group bt">
+              <button type="submit">Register</button>
+              <button (click)="next()" style="background: #ea139e">Back</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <dialog open class="dialog1" *ngIf="showCode">
+    <div class="form-group">
+      
+    <input type="text" name="code" [(ngModel)]="code" placeholder="Enter your code , please !" class="form-control">
+    </div>
+    <div class="form-group">
+      <button class="btn btn-success" (click)="saveAccount()">Enter</button>
+    </div>
+  </dialog>
+  <div  *ngIf="error">
+    <dialog open class="dialog">
+      <video src="../../../../assets/img/smoke.mp4" autoplay muted></video>
+      <h1>
+        <span>C</span>
+        <span>R</span>
+        <span>E</span>
+        <span>A</span>
+        <span>T</span>
+        <span>E</span>
+        <span>D </span>  
+        <span> S</span>
+        <span>U</span>
+        <span>C</span>
+        <span>C</span>
+        <span>E</span>
+        <span>S</span>
+        <span>S</span>
+        <span>F</span>
+        <span>U</span>
+        <span>L</span>
+        <span>L</span>
+        <span>Y</span>
+      </h1>
+    </dialog>
+  </div>

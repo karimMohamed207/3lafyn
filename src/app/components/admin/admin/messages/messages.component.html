@@ -1,0 +1,23 @@
+<app-admin-nav></app-admin-nav>
+<div class="container">
+  <table class="table table-striped table-dark">
+    <thead>
+      <tr>
+        <th scope="col">UserName</th>
+        <th scope="col">Eamil</th>
+        <th scope="col">Messages</th>
+        <th scope="col">Date</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let message of messages">
+        <td>{{message.username}}</td>
+        <td>{{message.email}}</td>
+        <td>{{message.message}}</td>
+        <td>{{message.date | date:'short'}}</td>
+        <td><button class="btn btn-danger"  (click)="deleteMessage(message.id)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

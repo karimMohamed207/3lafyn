@@ -1,0 +1,48 @@
+.work{
+  background-color: #1b1b8c;
+  text-align: center;
+  height: 100vmin;
+}
+.logo{
+  position: relative;
+  top: 5%;
+  color: white;
+}
+h3{
+  position: relative;
+  /* font-size: 20px; */
+}
+.reg{
+  display: flex;
+  margin-top: 2%;
+}
+.indiv{
+  margin-left: 20%;
+}
+ button{
+  background-color:#1b1b8c;
+  border: none;
+  font-size: 40px;
+  color: white;
+}
+a{
+  text-decoration: none;
+}
+.com{
+  margin-left: 40%;
+}
+.login{
+  margin-top: 5%;
+  height: 141px;
+  color: white;
+}
+.login a{
+  color: white;
+  text-decoration: underline;
+}
+.img{
+  width: 27%;
+}
+p{
+  margin-top: -40px;
+}

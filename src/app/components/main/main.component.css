@@ -1,0 +1,39 @@
+.page{
+  background-color: #040450;
+  height: 100%;
+}
+.main{
+  width: 90%;
+  background-color: white;
+  margin-left: 5%;
+  height: 100%;
+}
+.work{
+  border-bottom: 1px solid #756c6c;
+  border-top: 1px solid #756c6c;
+  padding: 1%;
+  margin-top: 2%;
+  background: #949ca2;
+}
+.things{
+  display: flex;
+  
+}
+.myaccount , .order , .myorders{
+  margin: 0% 15%;
+  text-align: center;
+}
+.myaccount a , .order a , .myorders a{
+  text-decoration: none;
+  text-align: center;
+  color: #35373a;
+}
+.myaccount i , .order i , .myorders i{
+  color: #35373a;
+  font-size: 30px;
+  text-align: center;
+}
+.active i , .active a{
+  color: #f3cf00;
+}
+/*  */

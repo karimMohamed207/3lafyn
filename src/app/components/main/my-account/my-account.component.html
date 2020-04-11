@@ -1,0 +1,57 @@
+
+<div class="page">
+  <div class="main">
+    <app-main-nav></app-main-nav>
+  <div class="work">
+   <div class="things">
+     <div class="myaccount active">
+       <a routerLink="/{{user.username}}">
+        <i class="fa fa-file"></i><br>
+        My Account
+      </a>
+      </div>
+     <div class="order">
+        <a routerLink="/welcome">
+         <i class="fa fa-truck"></i><br>
+         Order Now
+       </a>
+     </div>
+     <div class="myorders">
+      <a routerLink="">
+        <i class="fa fa-table"></i><br>
+        My Orders
+      </a>
+     </div>
+   </div>
+  </div>
+  
+
+<table>
+  <tr>
+    <th>UserName</th>
+    <td>{{user.username}}</td>
+  </tr>
+  <tr>
+    <th>Email</th>
+    <td>{{user.email}}</td>
+  </tr>
+  <tr>
+    <th>Phone</th>
+    <td>{{user.phone}}</td>
+  </tr>
+  <tr>
+    <th>Country</th>
+    <td>{{user.address.country}}</td>
+  </tr>
+  <tr>
+    <th>City</th>
+    <td>{{user.address.city}}</td>
+  </tr>
+  <tr>
+    <th>FullAddress</th>
+    <td>{{user.address.addressDet}}</td>
+  </tr>
+</table>
+  </div>
+</div>
+

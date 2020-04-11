@@ -1,0 +1,279 @@
+.work{
+  background-color: #171769;
+  height: 97vh;
+}
+img{
+  width: 27%;
+}
+.area{
+  background-color: white;
+  height: 100%;
+  width: 80%;
+  margin-left: 10%;
+}
+.message{
+  background-color: tomato;
+  color: black;
+  margin-left: 20%;
+  width: 40%;
+  text-align: center;
+  padding-top: 40px;
+}
+.nav{
+  margin-left: 10%;
+  margin-top: 2%;
+  display: flex;
+}
+
+.details{
+  margin-top: 0%;
+  margin-left: 30%;
+  display: flex;
+}
+.account{
+  margin-right: 20%;
+}
+.account p {
+  text-align: center;
+  border: 1px solid #171769;
+  width: 30%;
+  border-radius: 100px;
+  border-radius: 100%;
+  background: #171769;
+  color: white;
+  margin-top: 10px;
+  margin-left: 35%;
+}
+.del p {
+  text-align: center;
+  border: 1px solid gray;
+  width: 30%;
+  border-radius: 100px;
+  border-radius: 100%;
+  background: gray;
+  color: white;
+  margin-top: 10px;
+  margin-left: 35%;
+}
+.form{
+  margin-top: 0%  ;
+  margin-left: 20%;
+  width: 60%;
+}
+.form-controll{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 10px;
+  background-color: white;
+  border: 1px solid gray;
+}
+.fa-user{
+  position: relative;
+  top: -70px;
+  left: 10px;
+  color: gray;
+}
+.fa-envelope-open{
+  color: gray;
+  position: relative;
+  top: -32px;
+  left: 10px;
+}
+input[type="password"]{
+  padding-left: 10px;
+}
+input[type="text"]{
+  padding-left: 10px;
+}
+.fa-unlock-alt{
+  color: gray;
+  position: relative;
+  top: -32px;
+  left: 10px;
+}
+.password{
+  display: flex;
+}
+.pass{
+  width: 50%;
+  margin-left: 10%;
+}
+.pass1{
+  width: 50%;
+}
+.form-group button{
+  width: 100%;
+  background-color: #171769;
+  border: 1px solid #171769;
+  border-radius: 5px;
+  height: 40px;
+  color: white;
+}
+.form-group p{
+  color: red;
+}
+
+
+
+.account1{
+  margin-right: 20%;
+}
+.account1 p {
+  text-align: center;
+  border: 1px solid #171769;
+  width: 30%;
+  border-radius: 100px;
+  border-radius: 100%;
+  background: gray;
+  color: white;
+  margin-top: 10px;
+  margin-left: 35%;
+}
+.del1 p {
+  text-align: center;
+  border: 1px solid gray;
+  width: 30%;
+  border-radius: 100px;
+  border-radius: 100%;
+  background: #171769;
+  color: white;
+  margin-top: 10px;
+  margin-left: 35%;
+}
+.eq{
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+.select{
+  display: flex;
+}
+.country , .city{
+  margin: 0px 20px 0px 0px;
+  width: 100%;
+}
+.country select , .city select{
+  width: 100%;
+    height: 40px;
+    border-radius: 5px;
+
+}
+.bt button{
+  margin-bottom: 3%;
+}
+.dialog1{
+  position: fixed;
+    top: 50%;
+    width: 25%;
+    height: 30%;
+    background-color: #f5e6e6;
+    border: none;
+    text-align: center;
+    line-height: 50px;
+}
+.dialog{
+  background-color: black;
+  position: fixed;
+  top: 10%;
+  left: 0%;
+  width: 50%;
+  height: 60%;
+  border-color: #FFF;
+  text-align: center;
+  line-height: 250px;
+}
+dialog h1{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 4em;
+  font-family: sans-serif;
+  letter-spacing: .1em;
+}
+dialog h1 span{
+  animation: animate 1s linear infinite;
+}
+video{
+  width: 100% ;
+  object-fit: cover;
+}
+@keyframes animate{
+  0%{
+    opacity: 0;
+    transform: rotateY(90deg);
+    filter: blur(5px);
+  }
+  100%{
+    opacity: 1;
+    transform: rotateY(0deg);
+    filter: blur(0px);
+  }
+}
+h1 span:nth-child(1){
+  color: red;
+}
+h1 span:nth-child(2){
+  color: blue;
+  
+}
+h1 span:nth-child(3){
+  color: green;
+}
+h1 span:nth-child(4){
+  color: tomato;
+}
+h1 span:nth-child(5){
+  color: slategrey;
+}
+h1 span:nth-child(6){
+  color: aqua;
+}
+h1 span:nth-child(7){
+  color: chocolate;
+  
+}
+h1 span:nth-child(8){
+  color: darkgoldenrod;
+}
+h1 span:nth-child(9){
+  color: blueviolet;
+}
+h1 span:nth-child(10){
+  color: crimson;
+}
+h1 span:nth-child(11){
+  color: #297;
+}
+h1 span:nth-child(12){
+  color: #976;
+  
+}
+h1 span:nth-child(13){
+  color: #689;
+}
+h1 span:nth-child(14){
+  color: #123;
+}
+h1 span:nth-child(15){
+  color: #491;
+}
+h1 span:nth-child(16){
+  color: red;
+}
+h1 span:nth-child(17){
+  color: blue;
+  
+}
+h1 span:nth-child(18){
+  color: green;
+}
+h1 span:nth-child(19){
+  color: tomato;
+}

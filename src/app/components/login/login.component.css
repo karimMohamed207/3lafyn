@@ -1,0 +1,101 @@
+.boy{
+	background-color: #12126d;
+	height: 100vh;
+}
+.work{
+	background-color: white;
+	height: 100%;
+	width: 70%;
+	position: fixed;
+	top: 0%;
+	left: 15%;
+
+}
+.logo{
+	text-align: center;
+	margin-top: 7%;
+}
+.logo h2{
+	font-size: 50px;
+	color: blue;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+hr{	
+	width: 50%;
+}
+.loginwork{
+
+	position: fixed;
+	top: 35%;
+	left: 20%;
+	width: 60%;
+	background-color: white;
+	height: 60%;
+}
+.form{
+	margin: 5%;
+	text-align: center;
+}
+.form-group{
+	margin-left: 20%;
+	margin-top: 10px;
+	width: 60%;
+	margin-bottom: 5%;
+	padding-left: 5%;
+}
+.user , .pass{
+	display: flex;
+	float: left;
+	border: 1px solid gray;
+	border-radius: 4px;
+	text-align: center;
+}
+.message{
+	background-color: tomato;
+	margin-left: 20%;
+	width: 60%;
+}
+.btn1{
+	padding-left: 0%;
+}
+.fa{
+	margin: 3%;
+}
+input{
+	border: none;
+}
+.btn-success{
+	width: 100%;
+	background-color: blue;
+}
+.forgot{
+	text-align: center;
+}
+a{
+	text-decoration: none;
+}
+.button1{
+	width: 100%;
+	background-color: white;
+	height: 50px;
+	border: 2px solid blue;
+	border-radius: 10px;
+}
+.message{
+	border: 1px solid gray;
+	background-color: tomato;
+}
+.error{
+	background: #f79ce0;
+    color: black;
+    font-size: larger;
+    font-family: initial;
+    font-style: initial;
+		text-transform: uppercase;
+		text-align: center;
+		width: 100%;
+}
+img{
+	width: 27%;
+}

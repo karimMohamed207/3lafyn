@@ -1,0 +1,21 @@
+<nav>
+  
+  <div class="company">
+    <a routerLink="/">
+      <img src="../../../assets/img/logo.png" alt="myLogo">
+    </a>
+  </div>
+
+  <div class="right">
+    <ul>
+    <li><a [routerLink]="['/home']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+    <li><a [routerLink]="['/contect-us']" routerLinkActive="active">ContactUs</a></li>
+    <li><a [routerLink]="['/pricing']" routerLinkActive="active" >Pricing</a></li>
+    <li><a [routerLink]="['/login']" routerLinkActive="active">Login</a></li>
+    <div class="btn">
+      <a [routerLink]="['/register']"><button class="btn btn-light">New User</button></a>
+    </div>
+  </ul>
+  </div>
+</nav>
+

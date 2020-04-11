@@ -1,0 +1,32 @@
+<div class="nav">
+  <nav>
+    <div class="logo">
+      <img src="../../../../assets/img/black-logo.png" alt="">
+    </div>
+    <div class="info">
+      <ul class="ul">
+        <li>
+          <button>
+            <i class="fa fa-bell"></i>
+          </button>
+        </li>
+        <li>
+          <button (click)="click()">
+            <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false">
+              {{user.username}} <span class="caret"></span>
+            </a>
+          </button>
+        </li>
+      </ul>
+      <dialog open *ngIf="show">
+        <ul>
+          <li>Notifications</li>
+          <li>My Clients</li>
+          <li>My Wallet</li>
+          <li>My Profile</li>
+          <li><button (click)="logout()">Logout</button></li>
+        </ul>  
+      </dialog>
+    </div>
+  </nav>
+</div>
